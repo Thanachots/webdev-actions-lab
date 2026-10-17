@@ -4,35 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My GitHub Pages Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="card">
-  <h1>My Web Development Lab – Automated Deploy</h1>
-  <p>ชื่อ: Thanachot Soubon | รหัสนิสิต: 67160218</p>
-  <p id="status">Ready to deploy</p>
-  <div class="actions">
-    <button id="helloBtn">Say Hello</button>
-    <button id="themeBtn">Toggle Theme</button>
-  </div>
+<header class="topbar">
+  <span class="brand">webdev-actions-lab</span>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="themeBtn" class="ghost" aria-label="Toggle theme">Toggle Theme</button>
+</header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>นิสิตมหาวิทยาลัยบูรพา สนใจการพัฒนาเว็บและระบบ CI/CD เบื้องต้น</p>
+<main>
+  <section class="hero">
+    <p class="eyebrow">Lab · GitHub Actions + Pages</p>
+    <h1>My Web Development Lab – Automated Deploy</h1>
+    <p class="who">ชื่อ: Thanachot Soubon <span>|</span> รหัสนิสิต: 67160218</p>
+    <p id="status" class="status" role="status">Ready to deploy</p>
+    <button id="helloBtn">Say Hello</button>
   </section>
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>Git &amp; GitHub</li>
-      <li>GitHub Actions &amp; Pages</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Contact</h2>
-    <p><a href="mailto:67160218@go.buu.ac.th">67160218@go.buu.ac.th</a></p>
-  </section>
+
+  <div class="grid">
+    <section id="about" class="panel wide">
+      <h2>About Me</h2>
+      <p>นิสิตมหาวิทยาลัยบูรพา สนใจการพัฒนาเว็บและระบบ CI/CD เบื้องต้น</p>
+    </section>
+
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <ul class="rows">
+        <li>HTML / CSS / JavaScript</li>
+        <li>Git &amp; GitHub</li>
+        <li>GitHub Actions &amp; Pages</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <p><a href="mailto:67160218@go.buu.ac.th">67160218@go.buu.ac.th</a></p>
+    </section>
+  </div>
 </main>
+
+<footer>Push → Actions → Pages · ทุกครั้งที่ commit เว็บอัปเดตเอง</footer>
 <script src="script.js"></script>
 </body>
 </html>
